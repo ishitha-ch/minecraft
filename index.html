@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C85</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="body_background">
+
+	<center>
+
+	<h2 class="btn-primary">MINECRAFT</h2>
+
+	<div class="btn-danger" id="head_info">
+		<h3>Current Width  = <span id="current_width">30</span> </h3>
+		<h3>Current Height  = <span id="current_height">30</span> </h3>
+	</div>
+	<div data-target="#popup" data-toggle="modal">
+		<button id="open">
+			Click for Instructions and Blocks Available 
+		</button>
+	</div>	
+		<div class="modal fade" id="popup"> 
+			<div class="modal-dialog">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Instructions for Minecraft</h4>
+				</div>
+
+				<div>
+					<p class="p_modal">
+						Press any arrow key to make the boy appear. Move him around the board using the arrow keys. Click any of the below keys to make blocks. 
+						<br>
+						<br>
+						Shift + P increases the block size
+						<br>
+						Shift + M decreases the block size
+						<br>
+						W makes a wall block
+						<br>
+						G makes a ground block
+						<br>
+						L makes a light green block 
+						<br>
+						T makes a trunk block 
+						<br>
+						R makes a roof block 
+						<br>
+						Y makes a yellow wall block 
+						<br>
+						D makes a dark green block 
+						<br>
+						C makes a cloud block 
+						<br>
+						U makes a unique block
+						<br>
+						<br>
+						Reload the page to clear the board and restart your creation.
+						
+					</p>
+				</div>
+			</div>
+		</div>
+		<br>
+	<canvas id="my_canvas" width="800" height="600"></canvas>
+	<br>
+
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
